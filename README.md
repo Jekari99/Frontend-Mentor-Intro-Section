@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-landing-page-with-dropdown-navbar-yEKcb5pbnr)
 - Live Site URL: [Add live site URL here](https://frontend-mentor-intro-dropdown.netlify.app/)
 
 ## My process

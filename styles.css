@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+* {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+}
+
+.nav-bar {
+    display: flex;
+    margin: 1rem;
+    width: 100%;
+}
+
+#logo {
+    margin: 3rem 1rem;
+}
+
+.nav-links {
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-links li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+}
+
+.nav-links li:hover {
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+}
+
+.login li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+}
+
+.login li:hover {
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.dropdown p {
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+    margin: 0;
+}
+
+.upArrow {
+    display: none;
+}
+
+.dropdown p:hover {
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.dropdown p:hover .down {
+    display: none;
+}
+
+.dropdown p:hover .upArrow {
+    display: inline;
+}
+
+
+.dropdown-content {
+    display: none;
+    background-color: #fff;
+    box-shadow: 5px 10px 10px 5px #c9c8c5;
+    border-radius: 5px;
+    margin-top: 1rem;
+    z-index: 1;
+    position: absolute;
+}
+
+.dropdown-content:hover {
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.dropdown-content ul {
+    padding: 10px;
+}
+
+.dropdown-content ul li {
+    list-style-type: none;
+    display: block;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#iconOpen {
+    margin: 2rem;
+    margin-top: 3rem;
+    display: none;
+}
+
+#iconClose {
+    margin: 2rem;
+    margin-top: 3rem;
+    display: none;
+}
+
+.login-reg {
+    float: right;
+    display: flex;
+}
+
+.login-reg ul {
+    display: flex;
+}
+
+.login-reg ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+}
+
+.login-reg ul li:hover {
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+#reg {
+    padding: 0;
+}
+
+#reg button {
+    border: 2px solid grey;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 20px;
+    background-color: transparent;
+    color: hsl(0, 0%, 41%);
+}
+
+#reg button:hover {
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+    border-color: hsl(0, 0%, 8%);
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.info {
+    width: 100%;
+    max-width: 100%;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.info h1 {
+    margin: 2rem;
+    font-size: clamp(2.2rem, 5.5vw, 4.2rem);
+    font-weight: 700;
+}
+
+.info p {
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    margin: 2rem 5rem 2rem 2rem;
+}
+
+.info button {
+    margin: 0;
+    font-size: 18px;
+    padding: 15px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 10px;
+    width: 40%;
+}
+
+.info button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+    margin: 5rem;
+    display: flex;
+    float: right;
+}
+
+.logos {
+    display: flex;
+    margin-top: 13rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.logos div {
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    max-width: 100%;
+}
+
+.logos div img {
+    max-width: 100%;
+}
+
+@media (max-width: 880px) {
+    .content {
+        display: block;
+    }
+
+    #iconOpen {
+        display: block;
+        z-index: 2;
+        position: relative;
+    }
+
+    #iconClose {
+        z-index: 2;
+        position: relative;
+    }
+
+    .nav-container {
+        display: block;
+    }
+
+    .nav-bar {
+        display: none;
+        background-color: hsl(0, 0%, 98%);
+        height: 100vh;
+        width: 290px;
+        z-index: 1;
+        position: absolute;
+        margin: 0;
+        right: 0;
+    }
+
+    .nav-bar ul {
+        display: block;
+    }
+
+    .nav-links {
+        display: block;
+        margin: 5rem 0.5rem 0 0.5rem;
+    }
+
+    .login-reg {
+        display: block;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .dropdown-content {
+        background-color: transparent;
+        box-shadow: none;
+        position: relative;
+    }
+
+    .login {
+        padding: 0;
+        text-align: center;
+    }
+
+    .login li {
+        display: block;
+    }
+
+    #reg button {
+        padding: 15px 70px;
+        border-radius: 15px;
+    }
+
+    .image {
+        content: url(/images/image-hero-mobile.png) !important;
+        margin: 0;
+    }
+
+    .info,
+    .info p,
+    .info h1 {
+        margin: 0;
+    }
+
+    .info h1 {
+        text-align: center;
+        padding: 30px;
+    }
+
+    .info p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .info button {
+        text-align: center;
+        width: 40%;
+        margin: 2rem;
+    }
+
+    .logos {
+        margin: 0;
+    }
+}
